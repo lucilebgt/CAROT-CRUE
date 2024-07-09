@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --color-back: #f5f5f5;
+  --color-text: black;
+  --color-light: #444;
+  --color-border: #ccc;
+}
+
+body {
+  line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-back);
+  background-image: url(../img//background.webp);
+  color: var(--color-text);
+}
+
+.dark {
+  background-image: none;
+  --color-back: #111;
+  --color-text: white;
+  --color-light: #aaa;
+  --color-border: #777;
+}
+
+select, button {
+  cursor: pointer;
+}
+
+input, select, button, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hidden {
+  display: none;
+}

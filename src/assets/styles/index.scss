@@ -1,0 +1,10 @@
+@use 'reset-css/sass/reset';
+
+@use './global';
+
+@use './components/menu';
+@use './components/modal';
+@use './components/page';
+@use './components/search';
+@use './components/segment';
+@use './components/title';

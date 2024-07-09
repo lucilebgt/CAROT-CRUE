@@ -1,0 +1,31 @@
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
+
+  &-item {
+    margin: .5rem 1rem;
+  }
+
+  &-select {
+    padding: 0.5rem;
+    background-color: var(--color-back);
+    border-radius: 5px;
+  }
+
+  &-action {
+    padding: 0.5rem;
+    border: 1px solid var(--color-border);
+    color: var(--color-back);
+    background-color: var(--color-text);
+    margin-top: -1px;
+    margin-left: 1rem;
+    border-radius: 5px;
+
+    &:hover {
+      border-color: var(--color-light);
+    }
+  }
+}

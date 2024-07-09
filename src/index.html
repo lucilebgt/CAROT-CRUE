@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/index.scss">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+  <script src="./assets/scripts/app.js" type="module" defer="true"></script>
+  <title>Carröt Crüe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <a id="carot" title="Retour en haut de page" href="/" class="page-logo"></a>
+      <nav class="menu">
+        <a class="menu-item" href="#listen">Ecouter</a>
+        <a class="menu-item" href="#songs">Morceaux</a>
+        <a class="menu-item" href="#tour">Tournée</a>
+        <button id= "contactButton" class="menu-item">Contact</button>
+        <button id="theme-button" class="menu-theme" title="Changer le thème">&#9790;</button>
+      </nav>
+    </header>
+    <main>
+      <section id="intro" class="title">
+        <h1 class="title-heading">Carröt Crüe</h1>
+        <p class="title-slogan">Le groupe qui a marqué l'histoire</p>
+      </section>
+      <section id="listen" class="segment">
+        <h2 class="segment-title">Ecouter l'extrait</h2>
+        <audio id="audio-player" class="segment-audio" controls src="./assets/sound/carrot-crue.mp3"></audio>
+        <img class="segment-cover" src="./assets/img/cover.jpg" alt="Dernier morceau">
+      </section>
+      <section id="songs" class="segment">
+        <h2 class="segment-title">Chercher un morceau</h2>
+        <form class="search" id="search">
+          <label class="search-item">
+            Compositeur
+            <select id="composer" class="search-select" name="composer">
+              <option value="all">Tous</option>
+              <option value="veggie">Veggie Six</option>
+              <option value="broco">Broco Lee</option>
+            </select>
+          </label>
+          <label class="search-item">
+            Album
+            <select id="album" class="search-select" name="album">
+              <option value="all">Tous</option>
+              <option value="super-carotte">Super carotte</option>
+              <option value="racine-pivotante">Racine pivotante</option>
+              <option value="carotene-le-retour">Carotène, le retour</option>
+            </select>
+          </label>
+          <button id="buttonSong" class="search-action">
+            Lancer la recherche
+          </button>
+        </form>
+        <ul class="segment-list" id="results">
+          <li class="segment-item">Lancez une recherche pour voir les résultats</li>
+        </ul>
+      </section>
+      <section id="tour" class="segment">
+        <h2 class="segment-title">Prochaines dates</h2>
+        <form id="tour-form" class="search">
+          <label class="search-item">
+            Pays
+            <select class="search-select" name="country">
+              <option value="all">Tous</option>
+              <option value="france">France</option>
+              <option value="usa">Etats-unis</option>
+            </select>
+          </label>
+          <button class="search-action">
+            Filtrer les villes
+          </button>
+        </form>
+        <ul class="segment-list" id="cities">
+          <li class="segment-item" data-country="usa">Los Angeles</li>
+          <li class="segment-item" data-country="usa">New-York</li>
+          <li class="segment-item" data-country="france">Paris</li>
+          <li class="segment-item" data-country="france">Lyon</li>
+          <li class="segment-item" data-country="usa">Chicago</li>
+          <li class="segment-item" data-country="france">Strasbourg</li>
+          <li class="segment-item" data-country="france">Lille</li>
+          <li class="segment-item" data-country="france">Toulouse</li>
+          <li class="segment-item" data-country="france">Marseille</li>
+          <li class="segment-item" data-country="france">Bordeaux</li>
+          <li class="segment-item" data-country="usa">Washington</li>
+          <li class="segment-item" data-country="usa">Détroit</li>
+          <li class="segment-item" data-country="france">Bar-le-Duc</li>
+          <li class="segment-item" data-country="usa">Philadelphie</li>
+          <li class="segment-item" data-country="usa">Miami</li>
+        </ul>
+      </section>
+      <section id="contact" class="modal hidden">
+        <div role="dialog" aria-labelledby="modal-label" aria-modal="true">
+          <h2 id="modal-label" class="modal-title">Contact</h2>
+          <p><a class="modal-link" href="mailto:contact@carrot-crue.toto">contact@carrot-crue.toto</a></p>
+        </div>
+        <button class="modal-close" title="Fermer">&#215;</button>
+      </section>
+    </main>
+    <footer class="page-footer">
+      &copy; Carröt Crüe - Toute ressemblance avec la réalité est fortuite
+    </footer>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .95);
+
+  &-title {
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  &-link {
+    font-size: 5vw;
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 4em;
+    padding: 0 .75rem;
+    line-height: 1;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+  
+  &.hidden {
+    display: none
+  }
+}
